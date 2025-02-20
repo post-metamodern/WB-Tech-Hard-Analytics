@@ -69,7 +69,7 @@ func main() {
 	http.HandleFunc("/request", handlePostRequest)
 	http.HandleFunc("/stats", handleStatsRequest)
 
-	log.Println("Сервер работает. Порту", port)
+	log.Println("Сервер работает. Порт", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
